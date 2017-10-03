@@ -11,22 +11,22 @@ echo "The value of $year: ";
 print_r($year);
 {
 echo "<br> <br>1. Replaced '-' with '/' in date <br>";
-$dateLatest = str_replace("-", "/","$date");
-echo "The value of $date: ".$dateLatest."<br>";
+$date1 = str_replace("-", "/","$date");
+echo "The value of $date: ".$date1."<br>";
 echo "<br>";
 }
 {
 echo "2.To compare date & tar and print accordingly";
-if (strcmp($dateLatest, $tar) > 0)
+if (strcmp($date1, $tar) > 0)
 	echo "<br> The future<br><br>";
-elseif  (strcmp($dateLatest, $tar) < 0)
+elseif  (strcmp($date1, $tar) < 0)
 	echo "<br> the past";
 else  echo "<br> oops";
 }
 echo "3. print the position of / in date <br>";
-for($i=0;$i<strlen($dateLatest);$i++)
+for($i=0;$i<strlen($date1);$i++)
 {
-if($dateLatest[$i]=='/')
+if($date1[$i]=='/')
 {
 echo " ".$i; 
 }
@@ -49,7 +49,7 @@ echo "<br>7. To return the last two charcters of date";
 echo "<br>".substr("$date", -2);
 }
 echo "<br> 8.Convert date into array & delimit '/' it with space<br>";
-$dateElements=explode("/",$dateLatest);
+$dateElements=explode("/",$date1);
 for($i=0;$i<count($dateElements);$i++)
 {
 echo $dateElements[$i]." ";
@@ -159,7 +159,10 @@ else
 {
 echo "<br>False";
 }
+
 break;
 }
 }
+
+
 ?>
