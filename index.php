@@ -1,6 +1,6 @@
 <?php
 $date =  date('Y-m-d', time());
-$word = "hi it has been a high time that i see you";
+$word = "Coding is hard,but if we do practice then it's easy";
 
 echo "The value of \$date: ".$date."<br>";
 
@@ -12,7 +12,7 @@ print_r($year);
 {
 echo "<br> <br>1. Replaced '-' with '/' in date <br>";
 $date1 = str_replace("-", "/","$date");
-echo "The value of $date: ".$date1."<br>";
+echo "The value of \$date: ".$date1."<br>";
 echo "<br>";
 }
 {
@@ -24,19 +24,19 @@ elseif  (strcmp($date1, $tar) < 0)
 else  echo "<br> oops";
 }
 echo "3. print the position of / in date <br>";
-for($i=0;$i<strlen($date1);$i++)
+for($x=0;$x<strlen($date1);$x++)
 {
-if($date1[$i]=='/')
+if($date1[$x]=='/')
 {
-echo " ".$i; 
+echo " ".$x; 
 }
 }
 {
-echo "<br><br>4.To print number of words in date and print it";
+echo "<br><br>4.Printing number of words in date and print it ";
 echo "<br>" .str_word_count($date);
 }
 {
-echo "<br><br>#<u> Hye it has been a long time that i saw you</u>"."<br>";
+echo "<br><br>#<u> Coding is hard,but if we do practice then it's easy</u>"."<br>";
 echo "5.The length of the above sentence is:";
 echo strlen($word)."<br>";
 }
@@ -45,7 +45,7 @@ echo "<br>6. ASCII value of first character of above underlined sentence is";
 echo "<br>" .ord ($word)."<br>";
 }
 {
-echo "<br>7. To return the last two charcters of date";
+echo "<br>7. For returning the last two characters of date";
 echo "<br>".substr("$date", -2);
 }
 echo "<br> 8.Convert date into array & delimit '/' it with space<br>";
